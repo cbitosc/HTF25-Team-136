@@ -1,53 +1,68 @@
-> Edited for use in IDX on 07/09/12
+﻿# HTF25-Team-136
 
-# Welcome to your Expo app 👋
+## GitHub submission guide
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+In this Readme, you will find a guide on how to fork this Repository, add files to it, and make a pull request to contribute your changes.
 
-## Get started
+<details open>
+<summary><h3>1. Login to your GitHub Account</h3></summary>
+<br>
+<p>Go to <a href="https://github.com">github.com</a> to log in.</p>
+<ul>
+   <li>Open the <a href="https://github.com/cbitosc/HTF25-Team-136">current repo</a> in a new tab.</li>
+   <li>Perform all operations in the newly opened tab, and follow the current tab for instructions.</li>
+</ul>
+</details>
 
-#### Android
+<details open>
+<summary><h3>2. Fork the Repository</h3></summary>
+<br>
+<p align="center">
+  <img src="fork.jpeg" alt="Fork the Repository" height="300">
+</p>
+<ul>
+ <li>In the newly opened tab, on the top-right corner, click on <b>Fork</b>.</li>
+ <li>Enter the <b>Repository Name</b> as <b>HTF25-Team-136</b>.</li>
+ <li>Then click <b>Create Fork</b>, leaving all other fields as default.</li>
+ <li>After a few moments, you can view your forked repo.</li>
+</ul>
+</details>
 
-Android previews are defined as a `workspace.onStart` hook and started as a vscode task when the workspace is opened/started.
+<details open>
+<summary><h3>3. Clone your Repository</h3></summary>
+<br>
+<ul>
+ <li>Click on <b>Code</b> and copy the <b>web URL</b> of your forked repository.</li>
+ <li>Open terminal on your local machine.</li>
+ <li>Run this command to clone the repo:</li>
+<pre><code>git clone https://github.com/your-username/HTF25-Team-136.git</code></pre>
+</ul>
+</details>
 
-Note, if you can't find the task, either:
-- Rebuild the environment (using command palette: `IDX: Rebuild Environment`), or
-- Run `npm run android -- --tunnel` command manually run android and see the output in your terminal. The device should pick up this new command and switch to start displaying the output from it.
+<details open>
+<summary><h3>4. Adding files to the Repository</h3></summary>
+<br>
+<ul>
+ <li>While doing it for the first time, create a new branch for your changes:</li>
+<pre><code>git checkout -b branch-name</code></pre>
+ <li>Add files or modify existing ones.</li>
+ <li>Stage your changes:</li>
+<pre><code>git add .</code></pre>
+ <li>Commit your changes:</li>
+<pre><code>git commit -m "Descriptive commit message"</code></pre>
+ <li>Push your branch to your fork:</li>
+<pre><code>git push origin branch-name</code></pre>
+</ul>
+</details>
 
-In the output of this command/task, you'll find options to open the app in a
+<details open>
+<summary><h3>5. Create a Pull Request</h3></summary>
+<br>
+<ul>
+ <li>Click on the <b>Contribute</b> button in your fork and choose <b>Open Pull Request</b>.</li>
+ <li>Leave all fields as default, then click <b>Create Pull Request</b>.</li>
+ <li>Wait a few moments; your PR is now submitted.</li>
+</ul>
+</details>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You'll also find options to open the app's developer menu, reload the app, and more.
-
-#### Web
-
-Web previews will be started and managred automatically. Use the toolbar to manually refresh.
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Thanks for participating!
