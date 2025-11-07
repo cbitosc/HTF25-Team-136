@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALMATE: AI Calorie Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Modern Font & Color Palette */
+      :root {
+        --background-light: #F7F7F7;
+        --background-dark: #121212;
+        --card-light: #FFFFFF;
+        --card-dark: #1E1E1E;
+        --text-light-primary: #1F2937;
+        --text-light-secondary: #6B7280;
+        --text-dark-primary: #E5E7EB;
+        --text-dark-secondary: #D1D5DB; /* Lighter for better contrast */
+        --primary: #4A90E2; /* A modern blue */
+        --primary-hover: #357ABD;
+        --accent: #50E3C2; /* A vibrant teal/green */
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .bg-app-light { background-color: var(--background-light); }
+      .dark .bg-app-dark { background-color: var(--background-dark); }
+      
+      .bg-card-light { background-color: var(--card-light); }
+      .dark .bg-card-dark { background-color: var(--card-dark); }
+      
+      .text-primary-light { color: var(--text-light-primary); }
+      .dark .text-primary-dark { color: var(--text-dark-primary); }
+      
+      .text-secondary-light { color: var(--text-light-secondary); }
+      .dark .text-secondary-dark { color: var(--text-dark-secondary); }
+
+      /* Custom scrollbar for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #2d2d2d;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+      /* Utility to hide scrollbar but keep scrolling */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-app-light dark:bg-app-dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
